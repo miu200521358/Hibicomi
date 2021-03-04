@@ -1,0 +1,66 @@
+{
+	"exec": "jp.comfycolor.hibicomi.launcher.GenreNormalLauncher",
+	"scrapingSetting": {
+		"active": "true",
+		"detailPauseSecond": "4",
+		"originalSave": "true",
+		"threadNum": "3",
+		"ua": "Mozilla /5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B5110e Safari/601.1",
+		"siteList": [
+			{
+				"name": "Renta!",
+				"active": "true",
+				"number": "10",
+				"freeExec": "jp.comfycolor.hibicomi.scraping.comic.RentaFreeScraper",
+				"genreExec": "jp.comfycolor.hibicomi.scraping.comic.RentaGenreScraper",
+				"detailUrlRoot": "https://renta.papy.co.jp",
+				"affiliateUrl": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3374817&pid=884977429&vc_url={originalUrl}%3Fref%3Dvc",
+				"pageList": [
+					{
+						"name": "少女",
+						"type": "girl",
+						"urlList": [
+							"https://renta.papy.co.jp/renta/sc/frm/list?rsi=a&genm=%E5%B0%91%E5%A5%B3%E6%BC%AB%E7%94%BB&type=desc&future=0&sort=rank&span=d&page="
+						]
+					},
+					{
+						"name": "女性",
+						"type": "femail",
+						"urlList": [
+							"https://renta.papy.co.jp/renta/sc/frm/list?rsi=a&genm=%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF&type=desc&future=0&sort=rank&span=d&page="
+						]
+					},
+					{
+						"name": "少年",
+						"type": "boy",
+						"urlList": [
+							"https://renta.papy.co.jp/renta/sc/frm/list?rsi=a&genm=%E5%B0%91%E5%B9%B4%E6%BC%AB%E7%94%BB&type=desc&future=0&sort=rank&span=d&page="
+						]
+					},
+					{
+						"name": "青年",
+						"type": "male",
+						"urlList": [
+							"https://renta.papy.co.jp/renta/sc/frm/list?rsi=a&genm=%E9%9D%92%E5%B9%B4%E6%BC%AB%E7%94%BB&type=desc&future=0&sort=rank&span=d&page="
+						]
+					},
+					{
+						"name": "BL",
+						"type": "bl",
+						"urlList": [
+							"https://renta.papy.co.jp/renta/sc/frm/list?rsi=a&genm=%E3%83%9C%E3%83%BC%E3%82%A4%E3%82%BA%E3%83%A9%E3%83%96%E6%BC%AB%E7%94%BB&type=desc&future=0&sort=rank&span=d&page="
+						]
+					},
+					{
+						"name": "TL",
+						"type": "tl",
+						"urlList": [
+							"https://renta.papy.co.jp/renta/sc/frm/list?rsi=a&genm=%E3%83%86%E3%82%A3%E3%83%BC%E3%83%B3%E3%82%BA%E3%83%A9%E3%83%96%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF&type=desc&future=0&sort=rank&span=d&page="
+						]
+					}
+				]
+			}
+		]
+	}
+
+}

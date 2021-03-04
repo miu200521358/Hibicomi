@@ -1,0 +1,23 @@
+{
+    "systemDict" : "{distRrootDir}/dic/system_core.dic",
+    "characterDefinitionFile" : "{distRrootDir}/dic/char.def",
+    "inputTextPlugin" : [
+        { "class" : "com.worksap.nlp.sudachi.DefaultInputTextPlugin" }
+    ],
+    "oovProviderPlugin" : [
+        { "class" : "com.worksap.nlp.sudachi.MeCabOovProviderPlugin",
+          "charDef" : "{distRrootDir}/dic/char.def",
+          "unkDef" : "{distRrootDir}/dic/unk.def" },
+        { "class" : "com.worksap.nlp.sudachi.SimpleOovProviderPlugin",
+          "oovPOS" : [ "補助記号", "一般", "*", "*", "*", "*" ],
+          "leftId" : 5968,
+          "rightId" : 5968,
+          "cost" : 3857 }
+    ],
+    "pathRewritePlugin" : [
+        { "class" : "com.worksap.nlp.sudachi.JoinNumericPlugin",
+          "joinKanjiNumeric" : true },
+        { "class" : "com.worksap.nlp.sudachi.JoinKatakanaOovPlugin",
+          "oovPOS" : [ "名詞", "普通名詞", "一般", "*", "*", "*" ] }
+    ]
+}

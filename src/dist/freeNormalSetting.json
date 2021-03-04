@@ -1,0 +1,488 @@
+{
+	"targetNow": "",
+	"exec": "jp.comfycolor.hibicomi.launcher.FreeNormalLauncher",
+	"separate": "10",
+	"saveSetting": {
+		"active": "true",
+		"exec": "jp.comfycolor.hibicomi.save.FreeNormalSaver",
+		"separate": "50"
+	},
+	"scrapingSetting": {
+		"active": "true",
+		"detailPauseSecond": "5",
+		"threadNum": "2",
+		"limit": "50",
+		"isExistedStop": "true",
+		"isExistedSkip": "true",
+		"isCheckFreeEnd": "true",
+		"ua": "Mozilla /5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B5110e Safari/601.1",
+		"catchcopyResources": [
+			"{m}が{k}で{m}なんて{d}!",
+			"なんで{m}が{d}しちゃったら、{k}{m}!",
+			"{k}{m}の{m}と{d}しちゃいました!",
+			"{k}{m}なのに、{d}なんて…{k}{m}!",
+			"{d}して、{d}して、{k}{m}の{m}!"
+		],
+		"genreMap": {
+			"少女": [
+				"少女マンガ",
+				"少女マンガ誌",
+				"少女漫画",
+				"少女コミック",
+				"少女･女性",
+				"少女"
+			],
+			"女性": [
+				"ＴＬ･レディコミ",
+				"女性漫画",
+				"女性マンガ",
+				"女性マンガ誌",
+				"女性コミック",
+				"女性向コミック",
+				"レディース",
+				"レディースコミック",
+				"ヤングレディース",
+				"ハーレクイン",
+				"ハーレクイン漫画",
+				"ハーレクインコミック",
+				"ハーレクインコミックス",
+				"少女･女性",
+				"女性"
+			],
+			"少年": [
+				"少年･青年",
+				"少年漫画",
+				"少年マンガ",
+				"少年コミック",
+				"少年マンガ誌",
+				"少年"
+			],
+			"青年": [
+				"少年･青年",
+				"青年漫画",
+				"青年マンガ",
+				"青年コミック",
+				"青年マンガ誌",
+				"青年",
+				"美女・美少女"
+			],
+			"BL": [
+				"ボーイズラブ",
+				"ボーイズラブコミック",
+				"ボーイズラブ小説",
+				"ボーイズラブ漫画",
+				"BL",
+				"BLコミック",
+				"BL小説",
+				"BL漫画",
+				"BoysLove"
+			],
+			"TL": [
+				"ＴＬ･レディコミ",
+				"ティーンズラブ",
+				"ティーンズラブコミック",
+				"ティーンズラブ小説",
+				"ティーンズラブ漫画",
+				"TLコミック",
+				"TL小説",
+				"TL漫画",
+				"Teen\u0027sLove",
+				"TL"
+			],
+			"その他": [
+				"ルポ・エッセイ漫画",
+				"タテコミ",
+				"絵ノベル",
+				"コミックシアター"
+			]
+		},
+		"siteList": [
+			{
+				"name": "Renta!",
+				"active": "true",
+				"exec": "jp.comfycolor.hibicomi.scraping.comic.free.RentaFreeScraper",
+				"affiliateUrl": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3418949&pid=885392626&vc_url={originalUrl}%2F%3Fref%3Dvc",
+				"pageList": [
+					{
+						"name": "誰でも無料",
+						"type": "all",
+						"genre": "all",
+						"urlList": [
+							"https://renta.papy.co.jp/renta/sc/frm/page/topics/c_freeall.htm"
+						]
+					},
+					{
+						"name": "会員限定無料",
+						"type": "member",
+						"genre": "all",
+						"urlList": [
+							"https://renta.papy.co.jp/renta/sc/frm/page/topics/c_freemember.htm"
+						]
+					}
+				]
+			},
+			{
+				"name": "BookLive",
+				"active": "true",
+				"exec": "jp.comfycolor.hibicomi.scraping.comic.free.BookLiveFreeScraper",
+				"affiliateUrl": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3418949&pid=885394476&vc_url={originalUrl}%3Futm_campaign%3Dcampaign-003%26utm_source%3Dvc%26utm_content%3DMyLink%26utm_medium%3Daff",
+				"pageList": [
+					{
+						"name": "会員限定無料(少年・青年)",
+						"type": "member",
+						"genre": "少年・青年",
+						"urlList": [
+							"https://booklive.jp/index/no-charge/category_id/C/sort/t18/page_no/1"
+						]
+					},
+					{
+						"name": "会員限定無料(少女・女性)",
+						"type": "member",
+						"genre": "少女・女性",
+						"urlList": [
+							"https://booklive.jp/index/no-charge/category_id/CF/sort/t18/page_no/1"
+						]
+					}
+				]
+			},
+			{
+				"name": "eBookJapan",
+				"active": "true",
+				"exec": "jp.comfycolor.hibicomi.scraping.comic.free.EBookJapanFreeScraper",
+				"affiliateUrl": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3418949&pid=885392608&vc_url={originalUrl}%3Fdealerid%3D30064",
+				"pageList": [
+					{
+						"name": "誰でも無料(少女・女性)",
+						"type": "all",
+						"genre": "少女・女性",
+						"urlList": [
+							"https://www.ebookjapan.jp/ebj/free/keyword-books/?sort=2&genreLabel=%E4%BA%BA%E6%B0%97%E3%81%AE%E7%84%A1%E6%96%99%E5%B0%91%E5%A5%B3%E3%83%BB%E5%A5%B3%E6%80%A7%E3%81%BE%E3%82%93%E3%81%8C&uniGenres=12"
+						]
+					},
+					{
+						"name": "誰でも無料(少年・青年)",
+						"type": "all",
+						"genre": "少年・青年",
+						"urlList": [
+							"https://www.ebookjapan.jp/ebj/free/keyword-books/?sort=2&genreLabel=%E4%BA%BA%E6%B0%97%E3%81%AE%E7%84%A1%E6%96%99%E5%B0%91%E5%B9%B4%E3%83%BB%E9%9D%92%E5%B9%B4%E3%81%BE%E3%82%93%E3%81%8C&uniGenres=10%2C11"
+						]
+					},
+					{
+						"name": "誰でも無料(BL)",
+						"type": "all",
+						"genre": "BL",
+						"urlList": [
+							"https://www.ebookjapan.jp/ebj/free/keyword-books/?sort=2&genreLabel=%E4%BA%BA%E6%B0%97%E3%81%AE%E7%84%A1%E6%96%99BL%E3%81%BE%E3%82%93%E3%81%8C&uniGenres=13"
+						]
+					},
+					{
+						"name": "誰でも無料(TL)",
+						"type": "all",
+						"genre": "TL",
+						"urlList": [
+							"https://www.ebookjapan.jp/ebj/free/keyword-books/?sort=2&genreLabel=%E4%BA%BA%E6%B0%97%E3%81%AE%E7%84%A1%E6%96%99TL%E3%81%BE%E3%82%93%E3%81%8C&uniGenres=14"
+						]
+					}
+				]
+			},
+			{
+				"name": "楽天kobo",
+				"active": "false",
+				"exec": "jp.comfycolor.hibicomi.scraping.comic.free.RakutenKoboFreeScraper",
+				"affiliateUrl": "",
+				"pageList": [
+					{
+						"name": "会員限定無料(少年)",
+						"type": "member",
+						"genre": "少年",
+						"urlList": [
+							"https://books.rakuten.co.jp/search/nm?f=A&sitem=*&maxp=0&mt=0&o=0&minp=0&cy=0&won=1&h=100&g=101904001&e=0&v=1&spv=2&s=2&sv=30"
+						]
+					},
+					{
+						"name": "会員限定無料(青年)",
+						"type": "member",
+						"genre": "青年",
+						"urlList": [
+							"https://books.rakuten.co.jp/search/nm?f=A&sitem=*&maxp=0&mt=0&o=0&minp=0&cy=0&won=1&h=100&g=101904002&e=0&v=1&spv=2&s=2&sv=30"
+						]
+					},
+					{
+						"name": "会員限定無料(少女)",
+						"type": "member",
+						"genre": "少女",
+						"urlList": [
+							"https://books.rakuten.co.jp/search/nm?f=A&sitem=*&maxp=0&mt=0&o=0&minp=0&cy=0&won=1&h=100&g=101904011&e=0&v=1&spv=2&s=2&sv=30"
+						]
+					},
+					{
+						"name": "会員限定無料(レディース)",
+						"type": "member",
+						"genre": "レディース",
+						"urlList": [
+							"https://books.rakuten.co.jp/search/nm?f=A&sitem=*&maxp=0&mt=0&o=0&minp=0&cy=0&won=1&h=100&g=101904&e=0&v=1&spv=2&s=2&sv=30"
+						]
+					}
+				]
+			},
+			{
+				"name": "シーモア",
+				"active": "true",
+				"exec": "jp.comfycolor.hibicomi.scraping.comic.free.CmoaFreeScraper",
+				"affiliateUrl": "",
+				"pageList": [
+					{
+						"name": "会員限定無料(少女)",
+						"type": "member",
+						"genre": "少女",
+						"urlList": [
+							"https://www.cmoa.jp/freecontents/title/girl/"
+						]
+					},
+					{
+						"name": "会員限定無料(少年)",
+						"type": "member",
+						"genre": "少年",
+						"urlList": [
+							"https://www.cmoa.jp/freecontents/title/boy/"
+						]
+					},
+					{
+						"name": "会員限定無料(BL)",
+						"type": "member",
+						"genre": "BL",
+						"urlList": [
+							"https://www.cmoa.jp/freecontents/title/boyslove/"
+						]
+					},
+					{
+						"name": "会員限定無料(TL)",
+						"type": "member",
+						"genre": "TL",
+						"urlList": [
+							"https://www.cmoa.jp/freecontents/title/teenslove/"
+						]
+					},
+					{
+						"name": "誰でも無料",
+						"type": "all",
+						"genre": "all",
+						"urlList": [
+							"https://www.cmoa.jp/freecontents/free/"
+						]
+					}
+				]
+			},
+			{
+				"name": "まんが王国",
+				"active": "true",
+				"exec": "jp.comfycolor.hibicomi.scraping.comic.free.MangaOkokuFreeScraper",
+				"affiliateUrl": "",
+				"pageList": [
+					{
+						"name": "誰でも無料(女性)",
+						"type": "all",
+						"genre": "女性",
+						"urlList": [
+							"https://comic.k-manga.jp/search/jikkuri?search_option%5Bsort%5D=new&search_option%5Bmixed_safe%5D=c34"
+						]
+					},
+					{
+						"name": "誰でも無料(少女)",
+						"type": "all",
+						"genre": "少女",
+						"urlList": [
+							"https://comic.k-manga.jp/search/jikkuri?search_option%5Bsort%5D=new&search_option%5Bmixed_safe%5D=c3"
+						]
+					},
+					{
+						"name": "誰でも無料(青年)",
+						"type": "all",
+						"genre": "青年",
+						"urlList": [
+							"https://comic.k-manga.jp/search/jikkuri?search_option%5Bsort%5D=new&search_option%5Bmixed_safe%5D=c1"
+						]
+					}
+					,
+					{
+						"name": "誰でも無料(少年)",
+						"type": "all",
+						"genre": "少年",
+						"urlList": [
+							"https://comic.k-manga.jp/search/jikkuri?search_option%5Bsort%5D=new&search_option%5Bmixed_safe%5D=c2"
+						]
+					}
+				]
+			},
+			{
+				"name": "ブッコミ",
+				"active": "true",
+				"exec": "jp.comfycolor.hibicomi.scraping.comic.free.HandyFreeScraper",
+				"affiliateUrl": "",
+				"pageList": [
+					{
+						"name": "会員限定無料(少女・女性)",
+						"type": "member",
+						"genre": "少女・女性",
+						"urlList": [
+							"https://sp.handycomic.jp/index/no-charge/category_id/CF"
+						]
+					},
+					{
+						"name": "会員限定無料(少年・青年)",
+						"type": "member",
+						"genre": "少年・青年",
+						"urlList": [
+							"https://sp.handycomic.jp/index/no-charge/category_id/C"
+						]
+					},
+					{
+						"name": "会員限定無料(TL)",
+						"type": "member",
+						"genre": "TL",
+						"urlList": [
+							"https://sp.handycomic.jp/index/no-charge/category_id/TL"
+						]
+					},
+					{
+						"name": "会員限定無料(BL)",
+						"type": "member",
+						"genre": "BL",
+						"urlList": [
+							"https://sp.handycomic.jp/index/no-charge/category_id/BL"
+						]
+					}
+				]
+			},
+			{
+				"name": "コミなび",
+				"active": "true",
+				"exec": "jp.comfycolor.hibicomi.scraping.comic.free.ComiNaviFreeScraper",
+				"affiliateUrl": "",
+				"pageList": [
+					{
+						"name": "誰でも無料(少女・女性)",
+						"type": "all",
+						"genre": "少女・女性",
+						"urlList": [
+							"https://mechacomi.jp/sd/page/tsearch/00000b0e/?gCode2=0002,0004&ngCode3=0001,0002,0003,0029&point=0&order=21"
+						]
+					},
+					{
+						"name": "誰でも無料(少年・青年)",
+						"type": "all",
+						"genre": "少年・青年",
+						"urlList": [
+							"https://mechacomi.jp/sd/page/tsearch/00000b0e/?gCode2=0001,0003&ngCode3=0001,0002,0003,0029&point=0&order=21"
+						]
+					},
+					{
+						"name": "誰でも無料(TL)",
+						"type": "all",
+						"genre": "TL",
+						"urlList": [
+							"https://mechacomi.jp/sd/page/tsearch/00000b0e/?gCode2=0002,0004&gCode3=0001,0029&point=0&order=21"
+						]
+					},
+					{
+						"name": "誰でも無料(BL)",
+						"type": "all",
+						"genre": "BL",
+						"urlList": [
+							"https://mechacomi.jp/sd/page/tsearch/00000b0e/?gCode2=0002,0004&gCode3=0003&point=0&order=21"
+						]
+					}
+				]
+			},
+			{
+				"name": "めちゃコミ",
+				"active": "true",
+				"exec": "jp.comfycolor.hibicomi.scraping.comic.free.MechaComiFreeScraper",
+				"affiliateUrl": "",
+				"pageList": [
+					{
+						"name": "会員限定無料(少女)",
+						"type": "member",
+						"genre": "少女",
+						"urlList": [
+							"https://sp.comics.mecha.cc/free/list?genre=2&sort=new_discount"
+						]
+					},
+					{
+						"name": "会員限定無料(女性)",
+						"type": "member",
+						"genre": "女性",
+						"urlList": [
+							"https://sp.comics.mecha.cc/free/list?genre=4&sort=new_discount"
+						]
+					},
+					{
+						"name": "会員限定無料(少年)",
+						"type": "member",
+						"genre": "少年",
+						"urlList": [
+							"https://sp.comics.mecha.cc/free/list?genre=1&sort=new_discount"
+						]
+					},
+					{
+						"name": "会員限定無料(青年)",
+						"type": "member",
+						"genre": "青年",
+						"urlList": [
+							"https://sp.comics.mecha.cc/free/list?genre=3&sort=new_discount"
+						]
+					},
+					{
+						"name": "会員限定無料(ハーレクイン)",
+						"type": "member",
+						"genre": "ハーレクイン",
+						"urlList": [
+							"https://sp.comics.mecha.cc/free/list?genre=40&sort=new_discount"
+						]
+					},
+					{
+						"name": "会員限定無料(TL)",
+						"type": "member",
+						"genre": "TL",
+						"urlList": [
+							"https://sp.comics.mecha.cc/free/list?genre=6&sort=new_discount"
+						]
+					},
+					{
+						"name": "会員限定無料(BL)",
+						"type": "member",
+						"genre": "BL",
+						"urlList": [
+							"https://sp.comics.mecha.cc/free/list?genre=24&sort=new_discount"
+						]
+					}
+				]
+			},
+			{
+				"name": "DMM",
+				"active": "true",
+				"exec": "jp.comfycolor.hibicomi.scraping.comic.free.DmmFreeScraper",
+				"affiliateUrl": "",
+				"pageList": [
+					{
+						"name": "会員限定無料(女性)",
+						"genre": "女性",
+						"type": "member",
+						"urlList": [
+							"https://book.dmm.com/list/free/comic/?floor=Gcomicf&n1=DgRJTglEBQ4GgrWZ1aD%2C09z506Wx&price_max=0&sort=date"
+						]
+					},
+					{
+						"name": "会員限定無料(男性)",
+						"type": "member",
+						"genre": "男性",
+						"urlList": [
+							"https://book.dmm.com/list/free/comic/?floor=Gcomic&n1=DgRJTglEBQ4GgrWZ1aD%2C09z506Wx&price_max=0&sort=date"
+						]
+					}
+				]
+			}
+		]
+	}
+
+}

@@ -1,0 +1,25 @@
+{
+	"dir": {
+		"originalDir": "original",
+		"jsonDir": "json",
+		"postedDir": "posted"
+	},
+	"mail": {
+		"id": "xxxxxxxxxx@gmail.com",
+		"passwd": "xxxxxxxxxx",
+		"fromAddress": "xxxxxxxxxx@gmail.com",
+		"fromName": "ひびこみ通知",
+		"toAddress": "xxxxxxxxxx@gmail.com",
+		"toName": "ひびこみ通知"
+	},
+	"web": {
+		"rootUrl": "https://xxxxxxxxxx",
+		"bearerToken": "xxxxxxxxxx",
+		"siteInfoPath": "/api/site/{siteName}",
+		"bookSiteInfoPath": "/api/book?url={bookSiteUrl}",
+		"bookSiteListExistedInfoPath": "/api/book-list-existed",
+		"bookSiteListSaveInfoPath": "/api/book-list-save",
+		"bookNotAdPath": "/api/book-not-ad?genres={bookGenres}"
+	}
+
+}

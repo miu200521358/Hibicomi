@@ -1,0 +1,25 @@
+<configuration>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<target>System.out</target>
+		<encoder>
+			<pattern>%-5r %d{yyyy/MM/dd HH:mm:ss.SSS} [%t] %-5le %lo{35} - %msg %n</pattern>
+		</encoder>
+	</appender>
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${USER_HOME}/logs/Hibicomi.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${USER_HOME}/logs/Hibicomi.%d.log</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+   		<encoder>
+			<charset>UTF-8</charset>
+			<pattern>%-5r %d{yyyy/MM/dd HH:mm:ss.SSS} [%t] %-5le %lo{35} - %msg %n</pattern>
+		</encoder>
+	</appender>
+
+	<root>
+		<level value="DEBUG" />
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE" />
+	</root>
+</configuration>

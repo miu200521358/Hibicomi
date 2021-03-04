@@ -1,0 +1,18 @@
+{
+	"exec": "jp.comfycolor.hibicomi.launcher.FreeTwitterLauncher",
+	"targetGenreList": [
+		"1", "2", "3", "4", "6"
+	],
+	"scrapingSetting": {
+	},
+	"twitterSetting": {
+		"consumerKey": "xxxxxxxxxx",
+		"consumerSecret": "xxxxxxxxxx",
+		"accessToken": "xxxxxxxxxx",
+		"accessTokenSecret": "xxxxxxxxxx",
+		"template": "無料で読めるのは #{site} で{free_end}まで！\r\n\r\nタイトル： #{title} {title_number}\r\n著者： #{author} \r\n「{catchcopy}」\r\n#無料まんが{genres}",
+		"queryList": [
+			"無料 漫画 サイト -BL -エロ"
+		]
+	}
+}
